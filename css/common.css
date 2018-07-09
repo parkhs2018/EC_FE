@@ -38,43 +38,8 @@ nav { line-height: 95px; vertical-align: middle; }
 
 /* 헤더 끝 */
 
-/* main_page 섹션 시작 */
-
-section h2 { font-size: 40px; font-weight: 700; word-wrap: break-word;  }
-section p { font-size: 24px; }
-.section_01 { width: 100%; height: 100vh; overflow: hidden;  z-index: -1; }
-.s1_container { width: 100%; height: 100%; background: url('../img/bg/section_01_bg.png') no-repeat; background-size: cover; position: fixed; z-index: -5; }
-.section_01 img { width: 100%; position: fixed; z-index: -2; position: absolute;  top:0; }
-.s1_text_box { width: 500px; position:relative; top: 360px; left: 320px; line-height: normal; color: #fff; }
-.s1_text_box a { color: #fff; margin-top: 15px; padding: 10px 20px; display: block; width: 65px; border: 1px solid; text-align: center; }
-.s1_text_box a:hover {background-color: #fff; color: #333; }
-.sec_01_border { width: 300px; border-bottom: 2px solid; display: block; margin: 20px 0 ; }
-
-.section_02 { width: 100%; height: 650px; background-color: #fff; z-index: 0;  color: #081856; overflow: hidden;}
-.section_02::after { content: ""; clear: both; display: block; }
-.s2_img { width: 50%; float: right; height: 650px; }
-.s2_text_box { width: 50%; float: left; height: 650px; line-height: normal; }
-.s2_text_possition { width: 500px; position: relative; left: 160px; top: 130px; }
-.sec_02_border { width: 300px; border-bottom: 2px solid #FFD646; display: block; margin: 20px 0 ; }
-
-.section_03 { width: 100%; height: 630px; overflow: hidden; background: #fff; }
-.s3_img_contain { width: 50%; overflow: hidden; height: 100%; float: left }
-.s3_img_contain ul { width: 2100px; }
-.s3_img_contain ul::after { content: ""; clear: both; display: block; }
-.s3_img_contain li { float: left; }
-.s3_img_contain img { width: 210px; }
-.s3_text_box { width: 500px; height: 100%; float: right; text-align: right; line-height: normal; }
-.s3_text_possition { position: relative; right: 160px; top: 130px; }
-.sec_03_border { width: 300px; border-bottom: 2px solid #FFD646; display: block; margin: 20px 0 20px 200px; }
-
-.section_04 { width: 100%; height: 100vh; background: #fff; }
-.s4_text_box { width: 1000px; margin: 0 auto; line-height: normal; position: relative; top: 130px; text-align: center; }
-.s4_text_box p { width: 400px; margin: 0 auto; }
-.s4_img_box img { width: 700px; margin: 0 auto; display: block; position: relative; top: 200px; }
-
-/* main_page 섹션 끝 */
-
 /* footer 시작  */
+
 footer { width:100%; background: #e9e9e9; }
 .footer_nav { width: 100%; border-bottom: 1px solid #fff; }
 .footer_nav li { float: left; text-align: center;}
@@ -83,3 +48,58 @@ footer { width:100%; background: #e9e9e9; }
 .footer_contain { max-width: 1440px; margin: 0 auto; }
 
 /* footer 끝  */
+
+/* company 섹션 시작 */
+
+.section_01 { width: 100%; height: 100vh; }
+.section_01::after { content: ""; clear: both; display: block; }
+.company_contain { color:#fff; background: url('../img/bg/company_section_01_bg.png') no-repeat; background-size: cover; width: 100%; height: 100%; text-align: center; line-height: normal; }
+.company_title { padding-top: 250px; }
+.company_title p { max-width: 1000px; margin: 50px auto  0; padding: 0 50px; font-size: 20px; }
+.company_contain h3 { font-size: 40px; font-weight: 600; }
+.company_h2 { color: #fff; top: 150px }
+.company_simbol { max-width: 1440px; margin: 200px auto 0; }
+.company_object { float: left; width: 33%; }
+.company_object h4 { font-size: 15px; font-weight: 200;}
+.company_object p { font-size: 30px; font-weight: 500; width: 200px; margin: 30px auto; }
+
+section > h2 { position: relative; left: 10%; font-size: 24px; font-weight: 400;}
+
+.section_02 { width: 100%; height: 800px; }
+.section_02::after { content: ""; clear: both; display: block; }
+.ceo { color: #000; top: 50px; }
+.thumbnail_ceo { max-width: 250px; max-height: 250px; background: #081856; color: #fff; height: 100%; }
+.thumbnail_ceo h3 { display: block; vertical-align: middle; line-height: 250px; text-align: center; font-size: 36px;}
+.ceo_contain { max-width: 1440px; margin: 0 auto; position:relative; top: 200px; }
+.ceo_talk { font-weight: 200; background: #FFD646; padding: 20px; max-width: 1200px; position: absolute; right: 0; font-size: 20px; line-height:normal ; top : 230px; }
+
+.section_03 { background: #081856; line-height: normal; padding-top: 50px; padding-bottom: 50px; }
+.section_03::after { content: ""; clear: both; display: block; }
+.section_03 h2 { color: #FFD646; top: 50px; }
+.hidden { display: none; }
+.section_03_icon { float: left; width: 30%; height: 30vh; text-align: center; line-height: 30vh; border-right: 3px solid #FFD646; }
+.section_03_container { width:100%; max-width: 1440px; margin: 0 auto; }
+.section_03_container::after { content:""; clear: both; display:block; }
+.section_03_list { float: left; margin-left: 100px; color: #FFD646; }
+.section_03_list li { margin-top: 100px; }
+.section_03_list .date { font-size: 15px; font-weight: 200; }
+.section_03_list .history_name {font-size: 18px; font-weight: 400; }
+
+.section_04 {  width: 100%; height: 600px; overflow: hidden; position: relative; }
+.section_04 h2 { top: 50px; }
+.customer_icon { position: absolute; left : 20%; top: 200px; }
+.customer_list { float: right; font-size: 40px; font-weight: 600; line-height: normal; width: 50%; text-align: center; }
+
+.section_05 { padding-top: 50px; }
+.section_05::after {content: ""; display: block; clear: both; }
+#map { max-width: 1440px; width: 100%; margin: 0 auto; height: 500px; }
+.contact_us { margin: 50px auto 30px; width: 100% ; max-width: 1100px; }
+.contact_us_info { width: 50%; float: left; text-align: right; line-height: normal; }
+.contact_us_info h4, .contact_us_info p { margin-right: 20px; margin-bottom: 15px; }
+.contact_us_info p  { font-size: 20px; }
+.contact_us_info h4 { font-size: 30px; }
+.contact_us_input {width: 50%; float: right; text-align: left; }
+.contact_us_input input { width: 100%; }
+
+
+/* company 섹션 끝 */
