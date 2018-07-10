@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="kr" dir="ltr">
+    <head>
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/howtouse.css">
+    <title>유디코어</title>
+  </head>
+  <body>
+    <header>
+      <script type="text/javascript">
+      $( document ).ready(function(){
+      $( ".main_nav a" ).on( "click", function() {
+        $('.sub_nav').toggleClass("show");
+      });});
+      </script>
+      <div class="header_contain">
+        <h1 id="logo"><img src="./img/logo.png" alt="유디코어" /></h1>
+        <nav class="main_nav">
+          <ul>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">제품</a></li>
+            <li><a href="#">문의</a></li>
+          </ul>
+        </nav>
+        <div class="log_nav">
+          <ul>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">즐겨찾기추가</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="sub_nav">
+        <div class="sub_nav_contain">
+          <ul id="sub_nav_first">
+            <li><a href="#">회사개요</a></li>
+            <li><a href="#">이용안내</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">브랜드별</a></li>
+            <li><a href="#">업종별</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">QnA</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">세금계산서신청</a></li>
+            <li><a href="#">견적문의</a></li>
+          </ul>
+      </div>
+    </div>
+    </header>
+    <section class="title HowToUse">
+      <h2>이용안내</h2>
+    </section>
+    <section class="thumb_icon">
+      <div class="flow_box">
+        <div class="icon_box">
+          <img src="./img/man.svg" alt="가입 및 사업자 인증">
+          <p>가입 및 사업자 인증</p>
+        </div>
+        <img src="./img/right.svg" alt="화살표">
+        <div class="icon_box">
+          <img src="./img/write.svg" alt="가입 및 사업자 인증">
+          <p>견적서 작성</p>
+        </div>
+        <img src="./img/right.svg" alt="화살표">
+        <div class="icon_box">
+          <img src="./img/print.svg" alt="가입 및 사업자 인증">
+          <p>발주서 작성 및 발주 요청</p>
+        </div>
+        <img src="./img/right.svg" alt="화살표">
+        <div class="icon_box">
+          <img src="./img/check_box.svg" alt="가입 및 사업자 인증">
+          <p>제품 발송 완료</p
+        </div>
+      </div>
+    </section>
+    <section class="flow_detail">
+      <div class="flow_nav">
+        <ul>
+          <li>
+            <a href="#">
+              <img src="./img/man.svg" alt="">
+              <p>가입 및 사업자 인증</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/write.svg" alt="">
+              <p>견적서 작성</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/print.svg" alt="">
+              <p>발주서 작성 및 발주 요청</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/check_box.svg" alt="">
+              <p>제품 발송 완료</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="item_box">
+        <div class="text_box">
+          <div class="head_area">
+            <h3>가입 및 사업자 인증</h3>
+          </div>
+          <div class="text_area">
+            <p>회원 가입 후 사업증명서를 업로드 하시면 확인 후 인증처리 완료가 됩니다.
+인증 후에는 가격 확인이 가능합니다. </p>
+          </div>
+        </div>
+        <div class="img_box">
+          <img src="./img/main/order_01.png" alt="">
+        </div>
+      </div>
+      <div class="item_box show">
+        <div class="text_box">
+          <div class="head_area">
+            <h3>견적서 요처 및 견적서 작성</h3>
+          </div>
+          <div class="text_area">
+            <p>제품을 확인하시고 견적을 직접 고를 수 도 있으며, 맞는 제품을 찾기가 어려우신 경우에는 e-mail 이나 웹에서 확인 가능할 수 있도록 도와드립니다.</p>
+          </div>
+        </div>
+        <div class="img_box">
+          <img src="./img/main/order_01.png" alt="">
+        </div>
+      </div>
+      <div class="item_box">
+        <div class="text_box">
+          <div class="head_area">
+            <h3>발주서 작성 및 발주요청</h3>
+          </div>
+          <div class="text_area">
+            <p>발주서를 작성하여 발주요청을 합니다.
+상품확인 절차를 거쳐 배송일과 배송지를 결정 후 제품 배송을 안내합니다. </p>
+          </div>
+        </div>
+        <div class="img_box">
+          <img src="./img/main/order_01.png" alt="">
+        </div>
+      </div>
+      <div class="item_box">
+        <div class="text_box">
+          <div class="head_area">
+            <h3>제품 발송</h3>
+          </div>
+          <div class="text_area">
+            <p>불량검수, 수량확인 등의 확인작업을 거쳐 제품 배송이 됩니다.</p>
+          </div>
+        </div>
+        <div class="img_box">
+          <img src="./img/main/order_01.png" alt="">
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer_nav">
+        <div class="footer_contain">
+          <ul>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">사이트맵</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_contain">
+        <div class="footer_info">
+            <p>
+              회사명: (주)유디코어   /  대표 : 황용선 <br>
+              사업자 등록번호 : 000-00-00000 / <br>
+              통신판매신고 : 서울- 00-00000 <br>
+              전화번호 : 02-0000-0000 / <br>
+              팩스 : 00-0000-0000 / <br>
+              주소 : 경기도 하남시 덕풍172로 28 / <br>
+              이메일 : parkhs2018@gmail.com
+            </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

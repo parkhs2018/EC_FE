@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="kr" dir="ltr">
+    <head>
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/howtouse.css">
+    <title>유디코어</title>
+  </head>
+  <body>
+    <header>
+      <script type="text/javascript">
+      $( document ).ready(function(){
+      $( ".main_nav a" ).on( "click", function() {
+        $('.sub_nav').toggleClass("show");
+      });});
+      </script>
+      <div class="header_contain">
+        <h1 id="logo"><img src="./img/logo.png" alt="유디코어" /></h1>
+        <nav class="main_nav">
+          <ul>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">제품</a></li>
+            <li><a href="#">문의</a></li>
+          </ul>
+        </nav>
+        <div class="log_nav">
+          <ul>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">즐겨찾기추가</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="sub_nav">
+        <div class="sub_nav_contain">
+          <ul id="sub_nav_first">
+            <li><a href="#">회사개요</a></li>
+            <li><a href="#">이용안내</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">브랜드별</a></li>
+            <li><a href="#">업종별</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">QnA</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">세금계산서신청</a></li>
+            <li><a href="#">견적문의</a></li>
+          </ul>
+      </div>
+    </div>
+    </header>
+    <section class="title qna">
+      <h2>문의</h2>
+    </section>
+    <section class="board_write">
+      <div class="write_label">
+        <div class="input_text">
+          <div class="input_row">
+            <label for="user_name">성함</label>
+            <input type="text" id="user_name" required placeholder="담당자 성함을 적어주세요">
+            </div>
+          <div class="input_row">
+            <label for="phone_num">연락처</label>
+            <input type="text" id="phone_num" placeholder="연락처를 적어주세요">
+          </div>
+          <div class="input_row">
+            <label for="eamil">이메일</label>
+            <input type="text" id="email" placeholder="이메일을 적어주세요">
+          </div>
+        </div>
+        <div class="input_checkbox">
+          <input type="checkbox" id="del_required">
+          <label for="del_required">게시판으로 답변받기</label>
+        </div>
+      </div>
+      <div class="qna_cat">
+        <ul>
+          <li>배송관련</li>
+          <li>상품관리</li>
+          <li>대량공급</li>
+          <li>회원정보</li>
+        </ul>
+      </div>
+      <div class="text_area">
+        <textarea name="content" id="content" cols="30" rows="10"></textarea>
+      </div>
+      <div class="send">
+        <a href="#">문의하기</a>
+      </div>
+    </section>
+    <footer>
+      <div class="footer_nav">
+        <div class="footer_contain">
+          <ul>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">사이트맵</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_contain">
+        <div class="footer_info">
+            <p>
+              회사명: (주)유디코어   /  대표 : 황용선 <br>
+              사업자 등록번호 : 000-00-00000 / <br>
+              통신판매신고 : 서울- 00-00000 <br>
+              전화번호 : 02-0000-0000 / <br>
+              팩스 : 00-0000-0000 / <br>
+              주소 : 경기도 하남시 덕풍172로 28 / <br>
+              이메일 : parkhs2018@gmail.com
+            </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

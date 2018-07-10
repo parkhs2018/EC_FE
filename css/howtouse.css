@@ -1,0 +1,31 @@
+
+/* 이용안내 시작  */
+
+section.title { width:100%; height: 200px; padding-top: 100px;  }
+.HowToUse { background: url('../img/bg/section_01_bg.png') no-repeat; background-size:cover;  }
+.title h2 { text-align: center; line-height: 200px; color: #fff; font-size: 30px; }
+
+section.thumb_icon { max-width: 1200px; margin: 50px auto; }
+section.thumb_icon::after {content: ""; display:block; clear:both; }
+.flow_box div, .flow_box > img { float: left; }
+.icon_box img { width : 120px; }
+.icon_box {width: 261px; text-align: center; }
+.icon_box p { font-size: 15px; font-weight: 600; margin-top: 15px; }
+.flow_box > img { width: 52px; margin-top: 45px;  }
+
+section.flow_detail { width: 1200px; margin: 0 auto; }
+section.flow_detail::after { content: ""; display: block; clear: both; }
+.flow_nav li { float: left; width: 25%; height: 50px; }
+.flow_nav li img { height: 50px; float: left; }
+.flow_nav li a p { line-height: 50px; float: left; margin-left: 20px; }
+.flow_nav::after { content: ""; clear:both; display: block; }
+.item_box { max-width: 1200px; margin: 0 auto; height: 500px; display: none; }
+.text_box { width: 50%; float: left; }
+.head_area { height: 200px; line-height: 200px; vertical-align: bottom; margin: 0 50px; }
+.text_area { margin: 0 50px; }
+.img_box { width: 50%; float: right; }
+.img_box img { width: 70%; max-height: 400px; margin: 100px 0 ; }
+section.flow_detail .show { display: block; }
+
+
+/* 이용안내 끝  */

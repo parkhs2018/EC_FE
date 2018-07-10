@@ -1,0 +1,56 @@
+
+/* company 섹션 시작 */
+
+.section_01 { width: 100%; height: 100vh; }
+.section_01::after { content: ""; clear: both; display: block; }
+.company_contain { color:#fff; background: url('../img/bg/company_section_01_bg.png') no-repeat; background-size: cover; width: 100%; height: 100%; text-align: center; line-height: normal; }
+.company_title { padding-top: 250px; }
+.company_title p { max-width: 1000px; margin: 50px auto  0; padding: 0 50px; font-size: 20px; }
+.company_contain h3 { font-size: 40px; font-weight: 600; }
+.company_h2 { color: #fff; top: 150px }
+.company_simbol { max-width: 1440px; margin: 200px auto 0; }
+.company_object { float: left; width: 33%; }
+.company_object h4 { font-size: 15px; font-weight: 200;}
+.company_object p { font-size: 30px; font-weight: 500; width: 200px; margin: 30px auto; }
+
+section > h2 { position: relative; left: 10%; font-size: 24px; font-weight: 400;}
+
+.section_02 { width: 100%; height: 800px; }
+.section_02::after { content: ""; clear: both; display: block; }
+.ceo { color: #000; top: 50px; }
+.thumbnail_ceo { max-width: 250px; max-height: 250px; background: #081856; color: #fff; height: 100%; }
+.thumbnail_ceo h3 { display: block; vertical-align: middle; line-height: 250px; text-align: center; font-size: 36px;}
+.ceo_contain { max-width: 1440px; margin: 0 auto; position:relative; top: 200px; }
+.ceo_talk { font-weight: 200; background: #FFD646; padding: 20px; max-width: 1200px; position: absolute; right: 0; font-size: 20px; line-height:normal ; top : 230px; }
+
+.section_03 { background: #081856; line-height: normal; padding-top: 50px; padding-bottom: 50px; }
+.section_03::after { content: ""; clear: both; display: block; }
+.section_03 h2 { color: #FFD646; top: 50px; }
+.hidden { display: none; }
+.section_03_icon { float: left; width: 30%; height: 30vh; text-align: center; line-height: 30vh; border-right: 3px solid #FFD646; }
+.section_03_container { width:100%; max-width: 1440px; margin: 0 auto; }
+.section_03_container::after { content:""; clear: both; display:block; }
+.section_03_list { float: left; margin-left: 100px; color: #FFD646; }
+.section_03_list li { margin-top: 100px; }
+.section_03_list .date { font-size: 15px; font-weight: 200; }
+.section_03_list .history_name {font-size: 18px; font-weight: 400; }
+
+.section_04 {  width: 100%; height: 600px; overflow: hidden; position: relative; }
+.section_04 h2 { top: 50px; }
+.customer_icon { position: absolute; left : 20%; top: 200px; }
+.customer_list { float: right; font-size: 40px; font-weight: 600; line-height: normal; width: 50%; text-align: center; }
+
+.section_05 { padding-top: 50px; margin-bottom: 30px; }
+.section_05::after {content: ""; display: block; clear: both; }
+#map { max-width: 1440px; width: 100%; margin: 0 auto; height: 500px; }
+.contact_us { margin: 50px auto 30px; width: 100% ; max-width: 1100px; }
+.contact_us_info { width: 50%; float: left; text-align: right; line-height: normal; }
+.contact_us_info h4, .contact_us_info p { margin-right: 20px; margin-bottom: 15px; }
+.contact_us_info p  { font-size: 20px; }
+.contact_us_info h4 { font-size: 30px; }
+.contact_us_input { width: 50%; float: right; text-align: left; }
+.contact_us_input .three { height: 150px; }
+.contact_us_text { width: 100%; border : 1px solid #ccc; box-shadow: inset 1px 0 3px rgba(0 , 0, 0 , 0.13); margin-bottom: 15px; }
+.contact_us_button { width: 115px; height: 45px; color: #fff; background:#008CBA; display: block; text-align: center; line-height: 45px; }
+
+/* company 섹션 끝 */

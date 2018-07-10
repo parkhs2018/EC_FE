@@ -1,0 +1,29 @@
+/* QnA 시작  */
+
+section.title { width:100%; height: 200px; padding-top: 100px;  }
+.qna { background: url('../img/bg/section_01_bg.png') no-repeat; background-size:cover;  }
+.title h2 { text-align: center; line-height: 200px; color: #fff; font-size: 30px; }
+
+section.board { width: 80%; max-width: 1440px; margin: 50px auto ; }
+.board_nav li { width: 90px; height: 50px; display: block; float: left; background: #081856; color: #fff; line-height: 50px; text-align: center; border-left: 1px solid #979797; }
+.board_nav li.selected { background: #FFD646; color: #000; border: none; }
+.board_nav li.pull_tax { width: 150px; }
+.board_nav::after { clear: both; content: ""; display: block; }
+.board_nav { margin-bottom: 30px; }
+table.board { width: 100%; text-align: center;  }
+table.board tr { height: 40px; border-top: 1px solid #eee; }
+.title_left { text-align: left; }
+table.board td { border-top: 1px solid #eee; }
+col.board_no { min-width: 100px; width: 5%; }
+col.board_title { min-width: 600px; width: 75%; }
+col.board_date , col.board_author { min-width: 200px; width: 10%; }
+
+div.page_nav { position: relative; width: 240px; margin: 0 auto; text-align: center; line-height: 20px; }
+.page_before , .page_next { width: 20px; float: left ; }
+div.page_nav li { width: 25px; height: 20px; float: left; }
+div.page_nav li.active { background-color: #081856; border-radius: 3px; color: #fff; }
+div.page_nav ul { display: inline; }
+div.page_nav li:hover { background: #eee; }
+
+
+/* QnA  끝  */
