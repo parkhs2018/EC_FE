@@ -27,3 +27,31 @@ div.page_nav li:hover { background: #eee; }
 
 
 /* QnA  끝  */
+/* QnA_글쓰기 시작  */
+
+section.title { width:100%; height: 200px; padding-top: 100px;  }
+.qna { background: url('../img/bg/section_01_bg.png') no-repeat; background-size:cover;  }
+.title h2 { text-align: center; line-height: 200px; color: #fff; font-size: 30px; }
+
+section.board_write { max-width: 1200px; margin: 50px auto; }
+section.board_write::after { content: ""; display: block; clear: both; }
+.input_text { width: 320px; float: left; height: 120px; }
+.input_text label { width: 60px; display: block; float: left; text-align: center; background:#DADADA; height: 30px; line-height: 30px; border: 2px solid #ccc;border-radius: 3px 0 0 3px; }
+.input_text input { width: 242px; height: 28px; border: solid #ccc; border-radius: 0 3px 3px 0;  border-width: 2px 2px 2px 0; padding-left: 10px; }
+.input_row { margin-bottom: 10px; }
+.input_checkbox { height: 30px; margin-top: 90px; line-height: 30px; float: left; margin-left: 20px; }
+.write_label::after {content: ""; display:block; clear: both; }
+
+div.qna_cat { width: 424px ; height: 45px; background: #008CBA; border-radius: 22px; overflow: hidden; margin-top: 20px; margin-bottom: 20px; color: #fff ;}
+div.qna_cat li { width: 105px; ; text-align: center; float: left; line-height: 45px; border-right: 1px solid #fff;  }
+div.qna_cat li:last-child { border:none; }
+div.qna_cat::after {content: ""; display: block; clear: both; }
+
+section.board_write .text_area  { width: 100%; margin: 0 ; }
+.text_area textarea { width: 100%; height: 300px; }
+
+div.send { width: 145px; height: 45px; float: right; background: #008CBA; border-radius: 1px; margin: 20px 0 0 0 ; }
+div.send a { width: 100%; line-height: 45px; display: block; color: #fff; text-align: center;}
+div.send:after { content: ""; clear: both; display: block; }
+
+/* QnA_글쓰기 끝  */
