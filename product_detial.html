@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="kr" dir="ltr">
     <head>
     <meta name="viewport" content="initial-scale=1, width=device-width"/>
@@ -11,10 +11,7 @@
   <body>
     <header>
       <script type="text/javascript">
-      $( document ).ready(function(){
-      $( ".main_nav a" ).on( "click", function() {
-        $('.sub_nav').toggleClass("show");
-      });});
+        sub_nav_show();
       </script>
       <div class="header_contain">
         <h1 id="logo"><img src="./img/logo.png" alt="유디코어" /></h1>
@@ -52,18 +49,98 @@
       </div>
     </div>
     </header>
-    <section class="title order">
-      <h2>회원사 정보</h2>
+    <section class="product_contain">
+      <div class="product_img_contain">
+        <img src="#" alt="" class="produt_detial_img">
+        <div class="img_nav">
+        </div>
+      </div>
+      <div class="product_base_info">
+        <div class="product_title">
+          <img src="" alt="" class="brand_logo">
+          <h6>K2-14</h6>
+        </div>
+        <div class="price">
+          <p>50,000원<span>(VAT 별도)</span></p>
+        </div>
+        <div class="size_select">
+          <div class="size">
+            <p>230</p>
+          </div>
+          <div class="size">
+            <p>235</p>
+          </div>
+          <div class="size">
+            <p>240</p>
+          </div>
+          <div class="size">
+            <p>245</p>
+          </div>
+          <div class="size">
+            <p>250</p>
+          </div>
+          <div class="size">
+            <p>255</p>
+          </div>
+          <div class="size">
+            <p>260</p>
+          </div>
+          <div class="size">
+            <p>265</p>
+          </div>
+          <div class="size">
+            <p>270</p>
+          </div>
+          <div class="size">
+            <p>275</p>
+          </div>
+          <div class="size">
+            <p>280</p>
+          </div>
+          <div class="size">
+            <p>285</p>
+          </div>
+          <div class="size">
+            <p>290</p>
+          </div>
+        </div>
+        <div class="selected">
+          <p class="product_name">K2-14(230)</p>
+          <input type="number" value="1">
+          <p class="price_selected">50,000원</p>
+          <button class="selected_del"></button>
+        </div>
+      </div>
+      <div class="button_order"><a href="" class="button">견적서담기</a></div>
     </section>
-    <section class="contain_primery">
-      <div class="mypage">
-        <h3>회사명</h3>
-        <div class="edit_mypage"><a href="#">회사정보수정</a></div>
-        <div class="edit_mypage"><a href="#">발주내역확인</a></div>
-        <div class="edit_mypage"><a href="#">견적요청내역</a></div>
-        <div class="edit_mypage"><a href="#">세금계산서발행내역</a></div>
-        <div class="edit_mypage"><a href="#">사업자인증</a></div>
-        <div class="edit_mypage"><a href="#">배송지목록</a></div>
+    <section class="product_detail_list">
+      <div class="product_detail">
+        <h6>인치</h6>
+        <p>6 Inch</p>
+      </div>
+      <div class="product_detail">
+        <h6>사이즈</h6>
+        <p>230 ~ 300mm</p>
+      </div>
+      <div class="product_detail">
+        <h6>무게</h6>
+        <p>700g(255mm 기준)</p>
+      </div>
+      <div class="product_detail">
+        <h6>갑피</h6>
+        <p>Tannied 가죽</p>
+      </div>
+      <div class="product_detail">
+        <h6>밑창</h6>
+        <p>폴리우레탄 중창, 고무 겉창</p>
+      </div>
+      <div class="product_detail">
+        <h6>끈 타입</h6>
+        <p>끝, 내측지퍼</p>
+      </div>
+      <div class="product_detail">
+        <h6>부가기능</h6>
+        <p>select</p>
       </div>
     </section>
     <footer>

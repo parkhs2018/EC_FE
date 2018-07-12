@@ -2,36 +2,51 @@
 
 /* main_page 섹션 시작 */
 
-section h2 { font-size: 40px; font-weight: 700; word-wrap: break-word;  }
-section p { font-size: 24px; }
-.section_01 { width: 100%; height: 100vh; overflow: hidden;  z-index: -1; }
-.s1_container { width: 100%; height: 100%; background: url('../img/bg/section_01_bg.png') no-repeat; background-size: cover; position: fixed; z-index: -5; }
-.section_01 img { width: 100%; position: fixed; z-index: -2; position: absolute;  top:0; }
-.s1_text_box { width: 500px; position:relative; top: 360px; left: 320px; line-height: normal; color: #fff; }
-.s1_text_box a { color: #fff; margin-top: 15px; padding: 10px 20px; display: block; width: 65px; border: 1px solid; text-align: center; }
-.s1_text_box a:hover {background-color: #fff; color: #333; }
-.sec_01_border { width: 300px; border-bottom: 2px solid; display: block; margin: 20px 0 ; }
+section { display: block ; }
+.section_main_01 { width: 100%; height: 100vh; overflow: hidden;  z-index: -1; }
+.section_main_01 .text_box { margin-top: 300px; color:#fff; }
+.section_main_01 .text_box a { color: #fff; margin-top: 15px;}
+.section_main_01 .text_box a:hover {background-color: #fff; color: #333; border-color:#fff;  }
+.section_main_01 .text_box h2, .section_main_01 .text_box p { max-width: 500px; }
+#main_01_bg { background: url('../img/bg/section_01_bg.png') no-repeat; background-size:cover; }
 
-.section_02 { width: 100%; height: 650px; background-color: #fff; z-index: 0;  color: #081856; overflow: hidden;}
-.section_02::after { content: ""; clear: both; display: block; }
-.s2_img { width: 50%; float: right; height: 650px; }
-.s2_text_box { width: 50%; float: left; height: 650px; line-height: normal; }
-.s2_text_possition { width: 500px; position: relative; left: 160px; top: 130px; }
-.sec_02_border { width: 300px; border-bottom: 2px solid #FFD646; display: block; margin: 20px 0 ; }
 
-.section_03 { width: 100%; height: 630px; overflow: hidden; background: #fff; }
-.s3_img_contain { width: 50%; overflow: hidden; height: 100%; float: left }
-.s3_img_contain ul { width: 2100px; }
-.s3_img_contain ul::after { content: ""; clear: both; display: block; }
-.s3_img_contain li { float: left; }
-.s3_img_contain img { width: 210px; }
-.s3_text_box { width: 500px; height: 100%; float: right; text-align: right; line-height: normal; }
-.s3_text_possition { position: relative; right: 160px; top: 130px; }
-.sec_03_border { width: 300px; border-bottom: 2px solid #FFD646; display: block; margin: 20px 0 20px 200px; }
+.section_main_02 { width: 100%; height: 650px; background-color: #fff; z-index: 0;  color: #222; overflow: hidden;}
+.section_main_02::after { content: ""; clear: both; display: block; }
+.section_main_02 .text_box { width: 720px; float: right; margin-top: 130px; }
+.section_main_02 .text_box h2, .section_main_02 .text_box p { max-width: 500px; float: left; }
+.section_main_02 .title_under_line { border-color : #FFD646; }
+.section_main_02 .half_screen { height: 650px; }
 
-.section_04 { width: 100%; height: 100vh; background: #fff; }
-.s4_text_box { width: 1000px; margin: 0 auto; line-height: normal; position: relative; top: 130px; text-align: center; }
-.s4_text_box p { width: 400px; margin: 0 auto; }
-.s4_img_box img { width: 700px; margin: 0 auto; display: block; position: relative; top: 200px; }
 
+.section_main_03 { width: 100%; height: 630px; overflow: hidden; background: #fff; color: #222; }
+#flow_container { width: 50%; overflow: hidden; height: 100%; float: left }
+#flow_container ul { width: 2100px; }
+#flow_container ul::after { content: ""; clear: both; display: block; }
+#flow_container li { float: left; }
+#flow_container img { width: 210px; }
+.section_main_03 .text_box { width: 720px; float:left; margin-top: 130px; }
+.section_main_03 .text_box h2, .section_main_03 .text_box p { max-width: 500px; float: right; margin-left: 50px; text-align: right; }
+.section_main_03 .title_under_line { border-color : #FFD646; }
+
+
+.section_main_04 { background: #fff; color: #222; }
+.s4_text_box { width: 1000px; margin: 0 auto; padding-top: 100px; line-height: normal;  text-align: center; }
+.s4_img_box img { width: 700px; margin: 50px auto 0; display: block;}
+.section_main_04 .title_under_line { border-color : #FFD646; }
+
+.main_btn { padding: 10px 20px; display: block; width:65px; border: 1px solid; text-align: center; }
+
+.slide_up_ani { animation-delay : 1s; animation-name : slideup ;  animation-duration: 1s; }
+
+@keyframes slideup {
+  from {
+    top:100px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
 /* main_page 섹션 끝 */

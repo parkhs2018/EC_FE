@@ -11,14 +11,8 @@
   </head>
   <body>
     <header>
-      <script type="text/javascript">
-      $( document ).ready(function(){
-      $( ".main_nav a" ).on( "click", function() {
-        $('.sub_nav').toggleClass("show");
-      });});
-      </script>
       <div class="header_contain">
-        <h1 id="logo"><img src="./img/logo.png" alt="유디코어" /></h1>
+        <h1 id="logo"><img src="./img/logo.png" alt="유디코어" alt="유디코어 로고"/></h1>
         <nav class="main_nav">
           <ul>
             <li><a href="#">회사소개</a></li>
@@ -53,29 +47,27 @@
       </div>
     </div>
     </header>
-    <section class="section_01">
-        <div class="s1_container"></div>
-          <div class="s1_text_box">
-            <h2>신뢰를 바탕으로 성장하는 유통기업</h2>
-            <div class="sec_01_border"></div>
-            <p class="sec_01_p">창립 이후로 부터 안전화 품목에 있어 끊임없는 집중과 도전으로 성장해온 유디코어</p>
-            <a href="#" class="sec_01_button">Detail</a>
+    <section class="section_main_01 full_screen">
+        <div class="full_screen fixed_background" id="main_01_bg"></div>
+        <div class="text_box w1440 slide_up_ani">
+          <h2 class="title_under_line">신뢰를 바탕으로 성장하는 유통기업</h2>
+          <p>창립 이후로 부터 안전화 품목에 있어 끊임없는 집중과 도전으로 성장해온 유디코어</p>
+          <a href="#" class="main_btn">Detail</a>
         </div>
     </section>
-    <section class="section_02">
-      <div class="s2_img">
-        <img src="./img/bg/section_02_bg.png" alt="기업납품전문">
-      </div>
-      <div class="s2_text_box">
-        <div class="s2_text_possition">
-          <h2>기업납품전문</h2>
-          <div class="sec_02_border"></div>
-          <p class="sec_02_p">오랜기간 많은 고객들과 함께 해온 유디코어. 많은 기업 고객들의 필요에 따라 제안하고 협력하며 고객의 니즈를 빠르게 분석하며, 상황에 따라 빠른 대처를 통하여 기업고객의 만족을 높여왔습니다.</p>
+    <section class="section_main_02">
+      <div class="half_screen">
+        <div class="text_box">
+          <h2 class="title_under_line" >기업납품전문</h2>
+          <p>오랜기간 많은 고객들과 함께 해온 유디코어. 많은 기업 고객들의 필요에 따라 제안하고 협력하며 고객의 니즈를 빠르게 분석하며, 상황에 따라 빠른 대처를 통하여 기업고객의 만족을 높여왔습니다.</p>
         </div>
       </div>
+      <div class="half_screen">
+        <img src="./img/bg/section_02_bg.png" alt="안전화 상담">
+      </div>
     </section>
-    <section class="section_03">
-      <div class="s3_img_contain">
+    <section class="section_main_03">
+      <div class="" id="flow_container">
         <ul>
           <li><img src="./img/product/01.png" alt=""></li>
           <li><img src="./img/product/02.png" alt=""></li>
@@ -104,20 +96,18 @@
           <li><img src="./img/product/21.png" alt=""></li>
         </ul>
       </div>
-      <div class="s3_text_box">
-        <div class="s3_text_possition">
-          <h2>제안요청</h2>
-          <div class="sec_03_border"></div>
+      <div class="s3_text_box half_screen">
+        <div class="s3_text_possition text_box">
+          <h2 class="title_under_line">제안요청</h2>
           <p class="sec_02_p">약 200여가지의 다양한 안전화 중에서 고객님의 필요와 선호도에 따라 직접 고를 수도 있습니다. 또한 많은 안전화 중 선택이 힘들 경우에는 필요한 상황에 맞게 제안을 해 드리고 있습니다. </p>
         </div>
       </div>
     </section>
-    <section class="section_04">
-      <div class="s4_text_box">
+    <section class="section_main_04 full_screen">
+      <div class="s4_text_box text_box">
         <div class="s4_text_possition">
-          <h2>기업직납, 기업 소매를 위한 시스템</h2>
-          <div class="sec_03_border"></div>
-          <p class="sec_02_p">직납과 소매를 위한 최적의 시스템을 구축하여 보다 편리하고 안정적이게 구매가 가능하며, 안정적인 물량 수급을 위하여 보다 나은 체계를 만들어 나가고 있습니다. </p>
+          <h2 class="title_under_line">기업직납, 기업 소매를 위한 시스템</h2>
+          <p>직납과 소매를 위한 최적의 시스템을 구축하여 보다 편리하고 안정적이게 구매가 가능하며, 안정적인 물량 수급을 위하여 보다 나은 체계를 만들어 나가고 있습니다. </p>
         </div>
       </div>
       <div class="s4_img_box">
@@ -147,6 +137,7 @@
               주소 : 경기도 하남시 덕풍172로 28 / <br>
               이메일 : parkhs2018@gmail.com
             </p>
+            <p class="copyright"> Copyright eudicore </p>
         </div>
       </div>
     </footer>
