@@ -31,12 +31,11 @@ section { display: block ; }
 
 
 .section_main_04 { background: #fff; color: #222; }
-.s4_text_box { width: 1000px; margin: 0 auto; padding-top: 100px; line-height: normal;  text-align: center; }
+.section_main_04 .text_box { width: 1000px; margin: 0 auto; padding-top: 100px; text-align: center; }
 .s4_img_box img { width: 700px; margin: 50px auto 0; display: block;}
 .section_main_04 .title_under_line { border-color : #FFD646; }
 
 .main_btn { padding: 10px 20px; display: block; width:65px; border: 1px solid; text-align: center; }
-
 .slide_up_ani { animation-delay : 1s; animation-name : slideup ;  animation-duration: 1s; }
 
 @keyframes slideup {
