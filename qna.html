@@ -3,22 +3,18 @@
     <head>
     <meta name="viewport" content="initial-scale=1, width=device-width"/>
     <meta charset="utf-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.js"></script>
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/qna.css">
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <title>유디코어</title>
   </head>
   <body>
     <header>
-      <script type="text/javascript">
-      $( document ).ready(function(){
-      $( ".main_nav a" ).on( "click", function() {
-        $('.sub_nav').toggleClass("show");
-      });});
-      </script>z
       <div class="header_contain">
-        <h1 id="logo"><img src="./img/logo.png" alt="유디코어" /></h1>
+        <h1 id="logo"><img src="./img/logo.png" alt="유디코어" alt="유디코어 로고"/></h1>
         <nav class="main_nav">
           <ul>
             <li><a href="#">회사소개</a></li>
@@ -37,7 +33,7 @@
       <div class="sub_nav">
         <div class="sub_nav_contain">
           <ul id="sub_nav_first">
-            <li><a href="#">회사개요</a></li>
+            <li><a href="/company.html">회사개요</a></li>
             <li><a href="#">이용안내</a></li>
           </ul>
           <ul>
@@ -65,13 +61,15 @@
           <li class="pull_tax">사업계산서 요청</li>
         </ul>
       </div>
-      <table class="board">
+      <div class="table-responsive">
+      <table class="board table table-striped">
         <colgroup>
           <col class="board_no">
           <col class="board_title">
           <col class="board_author">
           <col class="board_date">
         </colgroup>
+        <tbody>
         <tr>
           <th>번호</th>
           <th>제목</th>
@@ -138,7 +136,9 @@
           <td>author</td>
           <td>2018-07-10</td>
         </tr>
+        </tbody>
       </table>
+      </div>
       <div class="page_nav">
         <span class="page_before"><</span>
         <ul>
@@ -149,6 +149,9 @@
           <li><a href="#"></a>5</li>
         </ul>
         <span class="page_next">></span>
+      </div>
+      <div class="qna_write">
+        <a class="btn btn-default" href="#" role="button">글쓰기</a>
       </div>
     </section>
     <footer>
