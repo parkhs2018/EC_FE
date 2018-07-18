@@ -3,22 +3,18 @@
     <head>
     <meta name="viewport" content="initial-scale=1, width=device-width"/>
     <meta charset="utf-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.js"></script>
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/qna.css">
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <title>유디코어</title>
   </head>
   <body>
     <header>
-      <script type="text/javascript">
-      $( document ).ready(function(){
-      $( ".main_nav a" ).on( "click", function() {
-        $('.sub_nav').toggleClass("show");
-      });});
-      </script>
       <div class="header_contain">
-        <h1 id="logo"><img src="./img/logo.png" alt="유디코어" /></h1>
+        <h1 id="logo"><img src="./img/logo.png" alt="유디코어" alt="유디코어 로고"/></h1>
         <nav class="main_nav">
           <ul>
             <li><a href="#">회사소개</a></li>
@@ -37,7 +33,7 @@
       <div class="sub_nav">
         <div class="sub_nav_contain">
           <ul id="sub_nav_first">
-            <li><a href="#">회사개요</a></li>
+            <li><a href="/company.html">회사개요</a></li>
             <li><a href="#">이용안내</a></li>
           </ul>
           <ul>
@@ -53,43 +49,51 @@
       </div>
     </div>
     </header>
-    <section class="title qna">
-      <h2>문의</h2>
+    <section class="title order">
+      <h2>회원사정보수정</h2>
     </section>
     <section class="board_write">
       <div class="write_label">
         <div class="input_text">
-          <div class="input_row">
-            <label for="user_name">성함</label>
-            <input type="text" id="user_name" required placeholder="담당자 성함을 적어주세요">
-            </div>
-          <div class="input_row">
-            <label for="phone_num">연락처</label>
-            <input type="text" id="phone_num" placeholder="연락처를 적어주세요">
-          </div>
-          <div class="input_row">
-            <label for="eamil">이메일</label>
-            <input type="text" id="email" placeholder="이메일을 적어주세요">
-          </div>
+            <form>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-addon">이름</div>
+                  <input type="text" class="form-control" id="exampleInputAmount" placeholder="담당자 성함을 적어주세요.">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-addon">연락처</div>
+                  <input type="text" class="form-control" id="exampleInputAmount" placeholder="연락처를 적어주세요.">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-addon">이메일</div>
+                  <input type="text" class="form-control" id="exampleInputAmount" placeholder="이메일을 적어주세요.">
+                </div>
+              </div>
+            </form>
         </div>
-        <div class="input_checkbox">
-          <input type="checkbox" id="del_required">
-          <label for="del_required">게시판으로 답변받기</label>
-        </div>
+        <div class="checkbox">
+        <label>
+          <input type="checkbox" value="1">
+          게시판으로 만 답변받기
+        </label>
       </div>
-      <div class="qna_cat">
-        <ul>
-          <li>배송관련</li>
-          <li>상품관리</li>
-          <li>대량공급</li>
-          <li>회원정보</li>
-        </ul>
+      </div>
+      <div class="btn-group" role="group" aria-label="qna-cat-btn" data-toggle="buttons">
+        <button type="button" class="btn btn_blue" autocomplete="off">배송관련</button>
+        <button type="button" class="btn btn_blue" autocomplete="off">상품관련</button>
+        <button type="button" class="btn btn_blue" autocomplete="off">대량공급</button>
+        <button type="button" class="btn btn_blue" autocomplete="off">회원정보</button>
       </div>
       <div class="text_area">
-        <textarea name="content" id="content" cols="30" rows="10"></textarea>
+        <textarea name="content" id="content" cols="30" rows="10" class="form-control"></textarea>
       </div>
       <div class="send">
-        <a href="#" class="btn_blue">문의하기</a>
+        <a href="#" class="btn btn_blue">문의하기</a>
       </div>
     </section>
     <footer>

@@ -17,9 +17,9 @@
         <h1 id="logo"><img src="./img/logo.png" alt="유디코어" alt="유디코어 로고"/></h1>
         <nav class="main_nav">
           <ul>
-            <li><a href="#">회사소개</a></li>
-            <li><a href="#">제품</a></li>
-            <li><a href="#">문의</a></li>
+            <li><a data-toggle="collapse" href="#sub_nav" aria-expanded="false" aria-controls="sub_nav">회사소개</a></li>
+            <li><a data-toggle="collapse" href="#sub_nav" aria-expanded="false" aria-controls="sub_nav">제품</a></li>
+            <li><a data-toggle="collapse" href="#sub_nav" aria-expanded="false" aria-controls="sub_nav">문의</a></li>
           </ul>
         </nav>
         <div class="log_nav">
@@ -30,7 +30,7 @@
           </ul>
         </div>
       </div>
-      <div class="sub_nav">
+      <div class="sub_nav collapse" id="sub_nav">
         <div class="sub_nav_contain">
           <ul id="sub_nav_first">
             <li><a href="/company.html">회사개요</a></li>
@@ -52,17 +52,21 @@
     <section class="section_main_01 full_screen">
         <div class="full_screen fixed_background" id="main_01_bg"></div>
         <div class="text_box w1440 slide_up_ani">
-          <h2 class="title_under_line">신뢰를 바탕으로 성장하는 유통기업</h2>
-          <p>창립 이후로 부터 안전화 품목에 있어 끊임없는 집중과 도전으로 성장해온 유디코어</p>
-          <a href="#" class="main_btn">Detail</a>
+          <div>
+            <h2 class="title_under_line">신뢰를 바탕으로 성장하는 유통기업</h2>
+            <p>창립 이후로 부터 안전화 품목에 있어 끊임없는 집중과 도전으로 성장해온 유디코어</p>
+            <a href="#" class="main_btn">Detail</a>
+          </div>
         </div>
     </section>
-    <section class="section_main_02">
+    <section class="section_main_02 scrollspy">
       <div class="main_section_center">
-      <div class="half_screen">
-        <div class="text_box slide_up">
-          <h2 class="title_under_line" >기업납품전문</h2>
+      <div class="half_screen" id="main_popup_02">
+        <div class="slide_up">
+        <div class="text_box">
+          <h2 class="title_under_line">기업납품전문</h2>
           <p>오랜기간 많은 고객들과 함께 해온 유디코어. 많은 기업 고객들의 필요에 따라 제안하고 협력하며 고객의 니즈를 빠르게 분석하며, 상황에 따라 빠른 대처를 통하여 기업고객의 만족을 높여왔습니다.</p>
+        </div>
         </div>
       </div>
       <div class="half_screen">
@@ -73,48 +77,31 @@
     <section class="section_main_03">
       <div class="main_section_center">
       <div class="half_screen" id="flow_container">
-        <ul>
-          <li><img src="./img/product/01.png" alt=""></li>
-          <li><img src="./img/product/02.png" alt=""></li>
-          <li><img src="./img/product/03.png" alt=""></li>
-          <li><img src="./img/product/04.png" alt=""></li>
-          <li><img src="./img/product/05.png" alt=""></li>
-          <li><img src="./img/product/06.png" alt=""></li>
-          <li><img src="./img/product/07.png" alt=""></li>
-        </ul>
-        <ul>
-          <li><img src="./img/product/08.png" alt=""></li>
-          <li><img src="./img/product/09.png" alt=""></li>
-          <li><img src="./img/product/10.png" alt=""></li>
-          <li><img src="./img/product/11.png" alt=""></li>
-          <li><img src="./img/product/12.png" alt=""></li>
-          <li><img src="./img/product/13.png" alt=""></li>
-          <li><img src="./img/product/14.png" alt=""></li>
-        </ul>
-        <ul>
-          <li><img src="./img/product/15.png" alt=""></li>
-          <li><img src="./img/product/16.png" alt=""></li>
-          <li><img src="./img/product/17.png" alt=""></li>
-          <li><img src="./img/product/18.png" alt=""></li>
-          <li><img src="./img/product/19.png" alt=""></li>
-          <li><img src="./img/product/20.png" alt=""></li>
-          <li><img src="./img/product/21.png" alt=""></li>
-        </ul>
+        <div class="slider_contain_1">
+          <div class="slider_01"></div>
+        </div>
+        <div class="slider_contain_2">
+          <div class="slider_02"></div>
+        </div>
+        <div class="slider_contain_3">
+          <div class="slider_03"></div>
+        </div>
       </div>
-      <div class="half_screen">
-        <div class="text_box">
+      <div class="half_screen"id="main_popup_03">
+        <div class="slide_up">
+        <div class="text_box" >
           <h2 class="title_under_line">제안요청</h2>
           <p class="sec_02_p">약 200여가지의 다양한 안전화 중에서 고객님의 필요와 선호도에 따라 직접 고를 수도 있습니다. 또한 많은 안전화 중 선택이 힘들 경우에는 필요한 상황에 맞게 제안을 해 드리고 있습니다. </p>
         </div>
       </div>
       </div>
     </section>
-    <section class="section_main_04 full_screen">
+    <section class="section_main_04 full_screen" id="main_popup_04">
+      <div class="slide_up">
       <div class="text_box">
-        <div>
-          <h2 class="title_under_line">기업직납, 기업 소매를 위한 시스템</h2>
+          <h2 class="title_under_line" >기업직납, 기업 소매를 위한 시스템</h2>
           <p>직납과 소매를 위한 최적의 시스템을 구축하여 보다 편리하고 안정적이게 구매가 가능하며, 안정적인 물량 수급을 위하여 보다 나은 체계를 만들어 나가고 있습니다. </p>
-        </div>
+      </div>
       </div>
       <div class="s4_img_box">
         <div class="s4_img_position">

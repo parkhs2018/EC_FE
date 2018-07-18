@@ -10,6 +10,7 @@
     <!-- 합쳐지고 최소화된 최신 CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <title>유디코어</title>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=H7zyJBHM2v0r8EQjudC1&submodules=geocoder"></script>
   </head>
   <body>
     <header>
@@ -66,7 +67,7 @@
           </div>
           <div class="company_object">
             <h4>인재상</h4>
-            <p>능동적으로 도전하는 사람</p>
+            <p>능동적으로 <br>도전하는 사람</p>
           </div>
           <div class="company_object">
             <h4>조직문화</h4>
@@ -94,23 +95,24 @@
     </section>
     <section class="section_03">
       <h2 class="w1440">기업력</h2>
+      <div id="hidden_bg"></div>
       <div class="section_03_container">
-        <div class="section_03_icon">
+        <div class="section_03_icon" id="history_icon">
           <ul>
             <li>
-              <img src="./img/icon/home.gif" alt="">
+              <img src="./img/icon/house.svg" alt="">
             </li>
             <li class="hidden">
-              <img src="./img/icon/ebay.gif" alt="">
+              <img src="./img/icon/ebay.svg" alt="">
             </li>
             <li class="hidden">
-              <img src="./img/icon/book.gif" alt="">
+              <img src="./img/icon/book.svg" alt="">
             </li>
             <li class="hidden">
-              <img src="./img/icon/amazon.gif" alt="">
+              <img src="./img/icon/amazon.svg" alt="">
             </li>
             <li class="hidden">
-              <img src="./img/icon/building.gif" alt="">
+              <img src="./img/icon/building.svg" alt="">
             </li>
           </ul>
         </div>
@@ -159,7 +161,12 @@
     <section class="section_04">
       <h2 class="w1440">고객사</h2>
       <div class="customer_icon">
-        <img src="./img/icon/home.gif" alt="">
+        <img src="./img/customer/01.png" class="fade_num_01" alt="">
+        <img src="./img/customer/02.png" class="fade_num_02" alt="">
+        <img src="./img/customer/03.png" class="fade_num_03" alt="">
+        <img src="./img/customer/04.png" class="fade_num_04" alt="">
+        <img src="./img/customer/05.png" class="fade_num_05" alt="">
+        <!--<img src="./img/customer/06.png" class="fade_num_06" alt="">-->
       </div>
       <div class="customer_list">
         <ul>
@@ -180,26 +187,53 @@
           <li>서해종합상사</li>
           <li>(주)어스앤컴퍼니</li>
           <li>신장종합상사</li>
+          <li>서울9호선운영주식회사</li>
+          <li>(주)GS홈쇼핑</li>
+          <li>(학)단국대학교</li>
+          <li>(주)이마트</li>
+          <li>한국환경공단</li>
+          <li>강남구청</li>
+          <li>광진구청청소과</li>
+          <li>속리산 국립공원 사무소</li>
+          <li>지엠(GM)물산</li>
         </ul>
       </div>
     </section>
     <section class="section_05">
-      <div id="map"></div>
+      <div id="map" style="width:100%;height:400px;"></div>
       <script>
-        // Initialize and add the map
-        function initMap() {
-         // The location of Uluru
-         var uluru = {lat: -25.344, lng: 131.036};
-         // The map, centered at Uluru
-         var map = new google.maps.Map(
-             document.getElementById('map'), {zoom: 4, center: uluru});
-         // The marker, positioned at Uluru
-         var marker = new google.maps.Marker({position: uluru, map: map});
-        }
-   </script>
-   <script async defer
-   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpJVxPQXOL5GYQ7ZsP0V-xfnIpr0Way24&callback=initMap">
-   </script>
+      var map = new naver.maps.Map('map');
+      var myaddress = '불정로 6';// 도로명 주소나 지번 주소만 가능 (건물명 불가!!!!)
+      naver.maps.Service.geocode({address: myaddress}, function(status, response) {
+          if (status !== naver.maps.Service.Status.OK) {
+              return alert(myaddress + '의 검색 결과가 없거나 기타 네트워크 에러');
+          }
+          var result = response.result;
+          // 검색 결과 갯수: result.total
+          // 첫번째 결과 결과 주소: result.items[0].address
+          // 첫번째 검색 결과 좌표: result.items[0].point.y, result.items[0].point.x
+          var myaddr = new naver.maps.Point(result.items[0].point.x, result.items[0].point.y);
+          map.setCenter(myaddr); // 검색된 좌표로 지도 이동
+          // 마커 표시
+          var marker = new naver.maps.Marker({
+            position: myaddr,
+            map: map
+          });
+          // 마커 클릭 이벤트 처리
+          naver.maps.Event.addListener(marker, "click", function(e) {
+            if (infowindow.getMap()) {
+                infowindow.close();
+            } else {
+                infowindow.open(map, marker);
+            }
+          });
+          // 마크 클릭시 인포윈도우 오픈
+          var infowindow = new naver.maps.InfoWindow({
+              content: '<h4> [네이버 개발자센터]</h4><a href="https://developers.naver.com" target="_blank"><img src="https://developers.naver.com/inc/devcenter/images/nd_img.png"></a>'
+          });
+      });
+      </script>
+  </body>
    <div class="contact_us">
      <div class="contact_us_info">
        <h2 class="contact_us_title">Contact Us</h2>
@@ -208,10 +242,20 @@
        <p>FAX : 02-0000-0000 </p>
      </div>
      <div class="contact_us_input">
-       <input type="text" class="contact_us_text" name="title">
-       <input type="text" class="contact_us_text" name="email">
-       <textarea  class="contact_us_text three" name="content"></textarea>
-       <a class="contact_us_button">전송</a>
+       <form>
+         <div class="form-group">
+           <label for="contact_us_email">이메일주소</label>
+           <input type="email" id="contact_us_email" class="contact_us_text form-control" name="email" placeholder="이메일을 입력해주세요">
+         </div>
+         <div class="form-group">
+           <label for="contact_us_title">제목</label>
+           <input type="text" class="contact_us_title form-control" name="title" placeholder="제목을 입력해주세요">
+         </div>
+         <div class="form-group">
+           <textarea  class="contact_us_text form-control" rows="9" name="content" placeholder="내용을 입력해주세요. 원활한 처리를 위하여 연락처도 함께 입력해주세요."></textarea>
+         </div>
+           <a class="btn btn-default" role="button">전송</a>
+       </form>
      </div>
    </div>
     </section>

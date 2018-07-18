@@ -3,22 +3,18 @@
     <head>
     <meta name="viewport" content="initial-scale=1, width=device-width"/>
     <meta charset="utf-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.js"></script>
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/howtouse.css">
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <title>유디코어</title>
   </head>
   <body>
     <header>
-      <script type="text/javascript">
-      $( document ).ready(function(){
-      $( ".main_nav a" ).on( "click", function() {
-        $('.sub_nav').toggleClass("show");
-      });});
-      </script>
       <div class="header_contain">
-        <h1 id="logo"><img src="./img/logo.png" alt="유디코어" /></h1>
+        <h1 id="logo"><img src="./img/logo.png" alt="유디코어" alt="유디코어 로고"/></h1>
         <nav class="main_nav">
           <ul>
             <li><a href="#">회사소개</a></li>
@@ -37,7 +33,7 @@
       <div class="sub_nav">
         <div class="sub_nav_contain">
           <ul id="sub_nav_first">
-            <li><a href="#">회사개요</a></li>
+            <li><a href="/company.html">회사개요</a></li>
             <li><a href="#">이용안내</a></li>
           </ul>
           <ul>
@@ -80,86 +76,91 @@
       </div>
     </section>
     <section class="flow_detail">
+      <script type="text/javascript">
+      $('#myTab a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+        })
+      </script>
       <div class="flow_nav">
-        <ul>
-          <li>
-            <a href="#">
+        <ul class="nav nav-justified" role="tablist">
+          <li role="presentation" class="active" >
+            <a href="#join_member" role="tab" aria-control="join_member" data-toggle="tab">
               <img src="./img/man.svg" alt="">
               <p>가입 및 사업자 인증</p>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#make_cart" role="tab" aria-control="make_cart" data-toggle="tab">
               <img src="./img/write.svg" alt="">
               <p>견적서 작성</p>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#order_action" role="tab" aria-control="order_action" data-toggle="tab">
               <img src="./img/print.svg" alt="">
               <p>발주서 작성 및 발주 요청</p>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#complete" role="tab" aria-control="complete" data-toggle="tab">
               <img src="./img/check_box.svg" alt="">
-              <p>제품 발송 완료</p>
-            </a>
+            <p>제품 발송 완료</p>
+          </a>
           </li>
         </ul>
       </div>
-      <div class="item_box">
-        <div class="text_box">
-          <div class="head_area">
-            <h3>가입 및 사업자 인증</h3>
+      <div class="tab-content tab_area">
+        <div class="tab-pane active" role="tabpanel" id="join_member">
+          <div class="flow_info">
+            <div>
+              <blockquote>
+                <h3>가입 및 사업자 인증</h3>
+                <p>회원 가입 후 사업증명서를 업로드 하시면 확인 후 인증처리 완료가 됩니다. <br>
+    인증 후에는 가격 확인이 가능합니다. </p>
+            </div>
           </div>
-          <div class="text_area">
-            <p>회원 가입 후 사업증명서를 업로드 하시면 확인 후 인증처리 완료가 됩니다.
-인증 후에는 가격 확인이 가능합니다. </p>
+            <div class="flow_img">
+              <img src="./img/main/order_01.png" alt="">
+            </div>
+        </div>
+        <div class="tab-pane" role="tabpanel" id="make_cart">
+          <div class="flow_info">
+            <div>
+            <blockquote>
+              <h3>견적서 요청 및 견적서 작성</h3>
+              <p>제품을 확인하시고 견적을 직접 고를 수 도 있으며, 맞는 제품을 찾기가 어려우신 경우에는 e-mail 이나 웹에서 확인 가능할 수 있도록 도와드립니다.</p>
+          </blockquote>
           </div>
         </div>
-        <div class="img_box">
-          <img src="./img/main/order_01.png" alt="">
-        </div>
-      </div>
-      <div class="item_box show">
-        <div class="text_box">
-          <div class="head_area">
-            <h3>견적서 요처 및 견적서 작성</h3>
-          </div>
-          <div class="text_area">
-            <p>제품을 확인하시고 견적을 직접 고를 수 도 있으며, 맞는 제품을 찾기가 어려우신 경우에는 e-mail 이나 웹에서 확인 가능할 수 있도록 도와드립니다.</p>
+          <div class="flow_img">
+            <img src="./img/main/order_01.png" alt="">
           </div>
         </div>
-        <div class="img_box">
-          <img src="./img/main/order_01.png" alt="">
-        </div>
-      </div>
-      <div class="item_box">
-        <div class="text_box">
-          <div class="head_area">
-            <h3>발주서 작성 및 발주요청</h3>
-          </div>
-          <div class="text_area">
-            <p>발주서를 작성하여 발주요청을 합니다.
-상품확인 절차를 거쳐 배송일과 배송지를 결정 후 제품 배송을 안내합니다. </p>
+        <div class="tab-pane" role="tabpanel" id="order_action">
+          <div class="flow_info">
+            <div>
+            <blockquote>
+              <h3>발주서 작성 및 발주요청</h3>
+              <p>발주서를 작성하여 발주요청을 합니다. <br>
+  상품확인 절차를 거쳐 배송일과 배송지를 결정 후 제품 배송을 안내합니다. </p>
           </div>
         </div>
-        <div class="img_box">
-          <img src="./img/main/order_01.png" alt="">
-        </div>
-      </div>
-      <div class="item_box">
-        <div class="text_box">
-          <div class="head_area">
-            <h3>제품 발송</h3>
-          </div>
-          <div class="text_area">
-            <p>불량검수, 수량확인 등의 확인작업을 거쳐 제품 배송이 됩니다.</p>
+          <div class="flow_img">
+            <img src="./img/main/order_01.png" alt="">
           </div>
         </div>
-        <div class="img_box">
-          <img src="./img/main/order_01.png" alt="">
+        <div class="tab-pane" role="tabpanel" id="complete">
+          <div class="flow_info">
+            <div>
+            <blockquote>
+              <h3>제품 발송</h3>
+              <p>불량검수, 수량확인 등의 확인작업을 거쳐 제품 배송이 됩니다.</p>
+          </div>
+        </div>
+          <div class="flow_img">
+            <img src="./img/main/order_01.png" alt="">
+          </div>
         </div>
       </div>
     </section>

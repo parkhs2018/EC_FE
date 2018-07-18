@@ -1,20 +1,20 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="kr" dir="ltr">
     <head>
     <meta name="viewport" content="initial-scale=1, width=device-width"/>
     <meta charset="utf-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.js"></script>
     <link rel="stylesheet" href="./css/common.css">
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <title>유디코어</title>
   </head>
   <body>
     <header>
-      <script type="text/javascript">
-        sub_nav_show();
-      </script>
       <div class="header_contain">
-        <h1 id="logo"><img src="./img/logo.png" alt="유디코어" /></h1>
+        <h1 id="logo"><img src="./img/logo.png" alt="유디코어" alt="유디코어 로고"/></h1>
         <nav class="main_nav">
           <ul>
             <li><a href="#">회사소개</a></li>
@@ -33,7 +33,7 @@
       <div class="sub_nav">
         <div class="sub_nav_contain">
           <ul id="sub_nav_first">
-            <li><a href="#">회사개요</a></li>
+            <li><a href="/company.html">회사개요</a></li>
             <li><a href="#">이용안내</a></li>
           </ul>
           <ul>
@@ -49,98 +49,110 @@
       </div>
     </div>
     </header>
-    <section class="product_contain">
-      <div class="product_img_contain">
-        <img src="#" alt="" class="produt_detial_img">
-        <div class="img_nav">
+    <section class="product_contain container-fluid w1440">
+      <div class="product_wrap row">
+        <div class="product_img_contain col-md-5">
+          <img src="./img/product/03.png" alt="" class="produt_detial_img">
+            <div class="img_nav">
+            </div>
+        </div>
+        <div class="product_base_info col-md-7">
+          <div class="row">
+            <div class="product_title col-md-12">
+              <div class="row">
+                <img src="./img/brand/k2.png" alt="" class="brand_logo col-md-2">
+                <h2 class="col-md-10">K2-14</h2>
+              </div>
+            </div>
+            <div class="price col-md-12">
+              <p>50,000원<span>(VAT 별도)</span></p>
+            </div>
+            <div class="size_select col-md-12">
+              <div class="row">
+                <div class="size btn btn-default col-md-1">
+                  <p>230</p>
+                </div>
+                <div class="size btn btn-default col-md-1">
+                  <p>235</p>
+                </div>
+                <div class="size btn btn-default col-md-1">
+                  <p>240</p>
+                </div>
+                <div class="size btn btn-default col-md-1">
+                  <p>245</p>
+                </div>
+                <div class="size btn btn-default col-md-1">
+                  <p>250</p>
+                </div>
+                <div class="size btn btn-default col-md-1">
+                  <p>255</p>
+                </div>
+                <div class="size btn btn-default col-md-1">
+                  <p>260</p>
+                </div>
+                <div class="size btn btn-default col-md-1">
+                  <p>265</p>
+                </div>
+                <div class="size btn btn-default col-md-1">
+                  <p>270</p>
+                </div>
+                <div class="size btn btn-default col-md-1">
+                  <p>275</p>
+                </div>
+                <div class="size btn btn-default col-md-1">
+                  <p>280</p>
+                </div>
+                <div class="size btn btn-default col-md-1">
+                  <p>285</p>
+                </div>
+                <div class="size btn btn-default col-md-1">
+                <p>290</p>
+              </div>
+              </div>
+            </div>
+            <div class="selected col-md-12">
+              <div class="row">
+                <p class="product_name col-md-4">K2-14(230)</p>
+                <input class="col-md-3" type="number" value="1">
+                <p class="price_selected col-md-4">50,000원</p>
+                <button class="selected_del col-md-1">X</button>
+              </div>
+            </div>
+            <div class="button_order col-md-2 clearfix"><a href="" class="btn btn_blue">견적서담기</a></div>
+          </div>
         </div>
       </div>
-      <div class="product_base_info">
-        <div class="product_title">
-          <img src="" alt="" class="brand_logo">
-          <h6>K2-14</h6>
-        </div>
-        <div class="price">
-          <p>50,000원<span>(VAT 별도)</span></p>
-        </div>
-        <div class="size_select">
-          <div class="size">
-            <p>230</p>
-          </div>
-          <div class="size">
-            <p>235</p>
-          </div>
-          <div class="size">
-            <p>240</p>
-          </div>
-          <div class="size">
-            <p>245</p>
-          </div>
-          <div class="size">
-            <p>250</p>
-          </div>
-          <div class="size">
-            <p>255</p>
-          </div>
-          <div class="size">
-            <p>260</p>
-          </div>
-          <div class="size">
-            <p>265</p>
-          </div>
-          <div class="size">
-            <p>270</p>
-          </div>
-          <div class="size">
-            <p>275</p>
-          </div>
-          <div class="size">
-            <p>280</p>
-          </div>
-          <div class="size">
-            <p>285</p>
-          </div>
-          <div class="size">
-            <p>290</p>
-          </div>
-        </div>
-        <div class="selected">
-          <p class="product_name">K2-14(230)</p>
-          <input type="number" value="1">
-          <p class="price_selected">50,000원</p>
-          <button class="selected_del"></button>
-        </div>
-      </div>
-      <div class="button_order"><a href="" class="button">견적서담기</a></div>
     </section>
-    <section class="product_detail_list">
-      <div class="product_detail">
-        <h6>인치</h6>
-        <p>6 Inch</p>
-      </div>
-      <div class="product_detail">
-        <h6>사이즈</h6>
-        <p>230 ~ 300mm</p>
-      </div>
-      <div class="product_detail">
-        <h6>무게</h6>
-        <p>700g(255mm 기준)</p>
-      </div>
-      <div class="product_detail">
-        <h6>갑피</h6>
-        <p>Tannied 가죽</p>
-      </div>
-      <div class="product_detail">
-        <h6>밑창</h6>
-        <p>폴리우레탄 중창, 고무 겉창</p>
-      </div>
-      <div class="product_detail">
-        <h6>끈 타입</h6>
-        <p>끝, 내측지퍼</p>
-      </div>
-      <div class="product_detail">
-        <h6>부가기능</h6>
-        <p>select</p>
+    <section class="product_detail_list container-fluid w1440">
+      <div class="row">
+        <div class="product_detail col-md-4">
+          <h6>인치</h6>
+          <p>6 Inch</p>
+        </div>
+        <div class="product_detail col-md-4">
+          <h6>사이즈</h6>
+          <p>230 ~ 300mm</p>
+        </div>
+        <div class="product_detail col-md-4">
+          <h6>무게</h6>
+          <p>700g(255mm 기준)</p>
+        </div>
+        <div class="product_detail col-md-4">
+          <h6>갑피</h6>
+          <p>Tannied 가죽</p>
+        </div>
+        <div class="product_detail col-md-4">
+          <h6>밑창</h6>
+          <p>폴리우레탄 중창 <br> 고무 겉창</p>
+        </div>
+        <div class="product_detail col-md-4">
+          <h6>끈 타입</h6>
+          <p>끝, 내측지퍼</p>
+        </div>
+        <div class="product_detail col-md-4">
+          <h6>부가기능</h6>
+          <p>select</p>
+        </div>
       </div>
     </section>
     <footer>

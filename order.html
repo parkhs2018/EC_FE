@@ -3,21 +3,18 @@
     <head>
     <meta name="viewport" content="initial-scale=1, width=device-width"/>
     <meta charset="utf-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.js"></script>
     <link rel="stylesheet" href="./css/common.css">
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <title>유디코어</title>
   </head>
   <body>
     <header>
-      <script type="text/javascript">
-      $( document ).ready(function(){
-      $( ".main_nav a" ).on( "click", function() {
-        $('.sub_nav').toggleClass("show");
-      });});
-      </script>
       <div class="header_contain">
-        <h1 id="logo"><img src="./img/logo.png" alt="유디코어" /></h1>
+        <h1 id="logo"><img src="./img/logo.png" alt="유디코어" alt="유디코어 로고"/></h1>
         <nav class="main_nav">
           <ul>
             <li><a href="#">회사소개</a></li>
@@ -36,7 +33,7 @@
       <div class="sub_nav">
         <div class="sub_nav_contain">
           <ul id="sub_nav_first">
-            <li><a href="#">회사개요</a></li>
+            <li><a href="/company.html">회사개요</a></li>
             <li><a href="#">이용안내</a></li>
           </ul>
           <ul>
@@ -53,11 +50,11 @@
     </div>
     </header>
     <section class="title order">
-      <h2>견적서 작성</h2>
+      <h2>발주서 작성</h2>
     </section>
     <section class="order_info">
       <div class="customer_table">
-        <table>
+        <table class="table table-bordered">
           <colgroup>
             <col class="table_title">
             <col class="table_content">
@@ -89,7 +86,7 @@
         </table>
       </div>
       <div class="company_table">
-        <table>
+        <table class="table table-bordered">
           <colgroup>
             <col class="table_title">
             <col class="table_content">
@@ -308,25 +305,32 @@
         <div class="item_sum_vat"><p>부가세 : <span>5,000</span>원</p></div>
         <div class="item_sum_all"><p>합계총액 : <span>55,000</span>원</p></div>
       </div>
-      <div class="order_form">
-        <div class="order_place">
-          <h6>납품위치</h6>
-          <label for="">
-          <input type="text">
-          <input type="text">
-          <input type="checkbox">
-          <p>주소가 없을경우 체크해주세요.</p>
-          </label>
+      <div class="order_form row">
+        <div class="order_place col-md-4">
+          <form>
+            <div class="form-group">
+              <label for="">
+                <h6>납품위치</h6>
+              </label>
+              <input class="form-control" type="text">
+              <input class="form-control" type="text">
+            </div>
+            <div class="checkbox">
+              <label for="">
+              <input type="checkbox">주소가 없을경우 체크해주세요.
+              </label>
+            </div>
+          </form>
         </div>
-        <div class="pay_order">
+        <div class="pay_order col-md-4">
           <h6>결제 방법</h6>
           <label>
           <input type="radio" name="pay" value="현금">현금
           <input type="radio" name="pay" value="카드">카드
           </label>
         </div>
-        <div class="order_complete">
-          <a href="#">발주하기</a>
+        <div class="order_complete col-md-4">
+          <a href="#" class="btn btn-primary">발주하기</a>
         </div>
       </div>
     </section>
